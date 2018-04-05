@@ -1,0 +1,25 @@
+//memory is divided into blocks of a certain size
+//pointers can point to any variable
+//integers are 4 bytes long
+//array variable points to the first element in an array
+//* is used to dereference an operator
+
+int radius = 5;
+int *radiusPtr = &radius;
+int *otherRadiusPtr;
+otherRadiusPtr = radiusPtr;
+int r = *radiusPtr;
+
+//print the address of radius
+printf("%u", &radius);
+//prints value of radiusPtr
+printf("%d", *radiusPtr);
+//prints the value of the address that the pointer is pointing to
+printf("%d", *&radius);
+//print the address of radius as radiusPtr is pointing to the address of radius
+printf("%u", radiusPtr);
+//prints the address of radiusPtr
+printf("%u", radiusPtr);
+//prints the address of otherRadiusPtr
+printf("%u", &otherRadiusPtr);
+
